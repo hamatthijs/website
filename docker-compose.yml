@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  app:
+    container_name: website
+    restart: unless-stopped
+    build: .
+    ports:
+      - 4201:4201
